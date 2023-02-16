@@ -1,0 +1,132 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.jobsPage {
+  background-image: url(../images/z-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2vh;
+}
+
+.jobsList {
+  align-self: center;
+  display: flex;
+  flex-flow: row;
+  height: max-content;
+  padding: 2vw;
+  width: 90%;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 127, 231); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(52, 90, 177); 
+}
+
+.pageTitle {
+  color: rgb(24, 24, 35);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 6vh 0 2vh 4vw;
+}
+
+.input {
+  border: none;
+  border-radius: 10px;
+  color: rgba(83, 127, 231, 0.565);
+  font-size: medium;
+  height: 2em;
+  width: 16em;
+  margin-right: 1vw;
+  padding: 0.5vh 1vw;
+}
+
+.buttons {
+  background-color: white;
+  border: 1px solid rgba(83, 127, 231, 0.66);
+  color: rgb(83, 127, 231);
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 10px;
+  min-width: fit-content;
+  height: 2em;
+  padding: 0.5vh 1vw;
+  margin-right: 15vw;
+}
+
+.buttons.true {
+  background-color: rgb(83, 127, 231);
+  color: white;
+}
+
+.buttons.false {
+  background-color: white;
+  color: rgb(83, 127, 231);
+}
+
+.buttons:hover {
+  background-color: rgb(203, 218, 255);
+  color: rgb(15, 53, 143);
+  box-shadow: 2px 2px 2px rgba(50, 76, 137, 0.285);
+}
+
+.filtersList {
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 0 7vh 4vw;
+  width: 90%;
+}
+
+.companyFilter {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+#btn-company {
+  margin-bottom: 1vh;
+}
+
+.errorPage {
+  background-image: url(../images/z-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2vh;
+}
+
+.errorMessage {
+  font-family:monospace;
+  font-size: 4em;
+  font-weight: 700;
+}

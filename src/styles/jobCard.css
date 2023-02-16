@@ -1,0 +1,40 @@
+.jobCard {
+  background-color: rgba(255, 255, 255, 0.854);
+  border: 1px solid rgb(192, 238, 242);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(110, 138, 141, 0.659);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 2vw;
+  min-width: 19em;
+  max-height: 40vh;
+  padding: 15px;
+}
+
+.jobCard p {
+  color: rgb(24, 24, 55);
+}
+
+.jobCard h1 {
+  font-size: larger;
+}
+
+h3 {
+  font-size: medium;
+}
+
+#days {
+  align-self: flex-end;
+  font-size: small;
+  bottom: 0;
+}
+
+#description {
+  font-size: small;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 30%;
+  white-space: nowrap;
+}
